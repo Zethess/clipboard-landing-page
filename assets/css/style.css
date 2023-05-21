@@ -120,13 +120,14 @@ h3{
 /*-------------------------------------------footer-----------------------------------------------------------*/
 footer{
   background-color: hsl(0, 0%, 96%);
+  margin-bottom: 70px;
 }
 .page-footer{
-  padding: 50px 30px 70px 30px;
+  padding: 50px 30px 40px 30px;
   text-align: center;
 }
 .page-footer-logo{
-  width: 70px;
+  width: 50px;
 }
 .page-footer-page ul{
   margin: 50px 0px 50px 0px;
@@ -249,6 +250,7 @@ footer{
     grid-template-columns: repeat(auto-fill,270px);
     grid-gap: 0px;
     row-gap: 30px;
+    margin: 30px 0px 30px 0px;
   }
   .page-f{
     padding-right: 34px;
