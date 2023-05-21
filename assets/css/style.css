@@ -1,0 +1,259 @@
+:root{ 
+	/* Colors */
+	/* Primary */
+	--strong-cyan: hsl(171, 66%, 44%);
+  --light-blue: hsl(233, 100%, 69%);
+  
+	/* Neutral */
+	--white: hsl(0, 0%, 100%);
+	--dark-grayish-blue: hsl(210, 10%, 33%);
+  --grayish-blue: hsl(201, 11%, 66%);
+  
+	/* font */
+	--font-family: 'Bai Jamjuree', sans-serif;
+}
+*{
+	box-sizing: border-box; 
+	margin: 0;
+	padding: 0;
+}
+body,.page-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+	justify-content: center;
+}
+body p{
+  color: var(--grayish-blue);
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+h2{
+  font-size: 33px;
+  margin-bottom: 22px;
+}
+h3{
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+.padding{
+  padding: 0 31px 0 31px ;
+}
+.page-wrapper{
+  text-align: center;
+  min-height: 100vh;
+}
+.page-wrapper,.page,.btn{
+  font: 400 18px var(--font-family);
+}
+/*-------------------------------------------header-------------------------------------------*/  
+.header-img{
+  padding: 150px 0px 80px 0px;
+  background: url('../images/bg-header-mobile.png') no-repeat top ;
+  background-size: cover;
+}
+.header-description-text p{
+  margin-bottom: 40px;
+}
+.images, footer{
+  width: 100%;
+}
+.btn-block{
+  display: inline-flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 150px;
+}
+.btn{
+  padding: 16px 80px 16px 80px;
+  font-weight: 600;
+  color: var(--white);
+  border-radius: 25px; 
+  border: none;
+}
+.btn-ios{
+  background-color: var(--strong-cyan);
+  border-bottom: 2px solid hsl(171, 66%, 38%);
+  box-shadow: 0px 7px 29px -7px rgba(38,186,164,0.7);
+}
+.btn-mac{
+  background-color: var(--light-blue);
+  border-bottom: 2px solid hsl(233, 46%, 49%);
+}
+/*---------------------------------first section snippets-------------------------------------------*/  
+.homepage-snippets-img{
+  margin: 75px 0px 60px 0px;
+}
+.homepage-snippets-features li,.homepage-clipboard-bottom-text p{
+  margin-bottom: 60px;
+}
+/*---------------------------------second section clipboard-------------------------------------------*/  
+.homepage-clipboard-text {
+  margin: 250px 0px 75px 0px;
+}
+.homepage-clipboard-img{
+  margin-bottom: 100px;
+}
+/*----------------------------------third section clipboard-------------------------------------------*/  
+.homepage-workflow-features li img{
+  margin: 70px 0px 45px 0px;
+}
+.homepage-workflow-text p{
+  margin-bottom: 30px;
+}
+/*----------------------------------fourth section companies-------------------------------------------*/  
+.homepage-companies-logos{
+  margin-top: 150px;
+}
+.homepage-companies-logos ul {
+  display: grid;
+  grid-gap: 80px;
+}
+/*-----------------------------------fifth section clipboard-bottom-------------------------------------------*/                                           */
+.homepage-clipboard-bottom-text h2{
+  margin-top: 220px;
+}
+/*-------------------------------------------footer-----------------------------------------------------------*/
+footer{
+  background-color: hsl(0, 0%, 96%);
+}
+.page-footer{
+  padding: 50px 30px 70px 30px;
+  text-align: center;
+}
+.page-footer-logo{
+  width: 70px;
+}
+.page-footer-page ul{
+  margin: 50px 0px 50px 0px;
+  display: grid;
+  grid-gap: 30px;
+}
+.page{
+  color: var(--dark-grayish-blue);
+}
+.page-footer-media {
+  display: flex;
+	justify-content: center;
+}
+.page-footer-media ul{
+  display: flex;
+  column-gap: 50px;
+}
+.fa-brands{
+  font-size: 25px;
+  color: var(--dark-grayish-blue);
+}
+.btn:hover{
+  cursor: pointer;
+  transform: translate(-1px, -1px);
+}
+.btn:active{
+  transform: translate(1px,1px);
+}
+.media:hover,.page:hover{
+  color: var(--strong-cyan);
+}
+.fa-brands:hover{
+  transition: color 500ms;
+  color: var(--light-blue);
+}
+@media screen and (min-width: 980px){
+  body{
+    background: url('../images/bg-header-desktop.png') no-repeat top ;
+    background-size: contain;
+    width: 100%;
+  }
+  .padding{
+    padding: 0 0 0 0 ;
+  }
+  /*-------------------------------------------header-------------------------------------------*/  
+  .header-img{
+    background: none;
+  }
+  .header-description,.homepage-snippets-text,.homepage-clipboard-bottom-flex,.homepage-clipboard-text{
+    width: 100%;
+    max-width: 700px;
+  }
+  .header-description-text h2{
+    font-size: 41px;
+  }
+  .btn-block{
+    flex-direction: row;
+  }
+  .btn{
+    padding: 16px 40px 16px 40px;
+  }
+  /*---------------------------------first section snippets-------------------------------------------*/  
+  .homepage-snippets,.homepage-clipboard-bottom,.homepage-clipboard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .homepage-snippets-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .homepage-snippets-img img {
+    position: relative;
+    left: -120px; /* Ajusta el valor según la cantidad de desplazamiento que deseas */
+  }
+  .homepage-snippets-features{
+    text-align: left;
+    padding-top: 150px;
+    width: 400px;
+  }
+  /*---------------------------------second section clipboard-------------------------------------------*/  
+  .homepage-clipboard-text {
+    margin: 150px 0px 75px 0px;
+  }
+  /*---------------------------------third section workflow-------------------------------------------*/  
+  .homepage-workflow-features ul{
+    display: grid;
+    grid-template-columns: repeat(3,390px);
+    justify-content: center;
+    column-gap: 25px;
+  }
+  .homepage-workflow-features .homepage-workflow-img1 img{
+    margin: inherit;
+    margin: 70px 0px 37px 0px;
+  }
+  .homepage-workflow-features li p{
+    line-height: 30px;
+  }
+  /*---------------------------------fourth section companies-------------------------------------------*/  
+  .homepage-companies-logos{
+    margin: 150px 100px 0px 130px;
+  }
+  .homepage-companies-logos ul{
+    grid-template-columns: repeat(5,1fr);
+  }
+  /*---------------------------------fifth section clipboard-bottom-------------------------------------------*/  
+  .homepage-clipboard-bottom-text h2{
+    margin-top: 160px;
+  }
+  /*-------------------------------------------footer-----------------------------------------------------------*/
+  .page-footer {
+    display: grid;
+    grid-template-columns: 0.5fr 1.7fr 0.8fr;
+    place-items: center;
+  }
+  .page-footer-page{
+    place-self: normal;
+  }
+  .page-footer-page ul{
+    grid-template-columns: repeat(auto-fill,250px);
+    grid-gap: 0px;
+    row-gap: 30px;
+  }
+  .page-f{
+    padding-right: 34px;
+  }
+  .page-cu{
+    padding-right: 17px;
+  }
+}
