@@ -120,10 +120,10 @@ h3{
 /*-------------------------------------------footer-----------------------------------------------------------*/
 footer{
   background-color: hsl(0, 0%, 96%);
-  margin-bottom: 140px;
+  margin-bottom: 200px;
 }
 .page-footer{
-  padding: 50px 30px 40px 30px;
+  padding: 55px 30px 55px 30px;
   text-align: center;
 }
 .page-footer-logo{
@@ -133,6 +133,11 @@ footer{
   margin: 50px 0px 50px 0px;
   display: grid;
   grid-gap: 30px;
+}
+.page-footer-page ul li{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 .page{
   color: var(--dark-grayish-blue);
@@ -215,7 +220,7 @@ footer{
   /*---------------------------------third section workflow-------------------------------------------*/  
   .homepage-workflow-features ul{
     display: grid;
-    grid-template-columns: repeat(3,390px);
+    grid-template-columns: repeat(3,390px); 
     justify-content: center;
     column-gap: 25px;
   }
@@ -248,14 +253,29 @@ footer{
   }
   .page-footer-page ul{
     grid-template-columns: repeat(auto-fill,270px);
+    grid-template-areas: 
+    "f pp ig "
+    "cu pk "" "
+    ;
     grid-gap: 0px;
     row-gap: 30px;
     margin: 30px 0px 30px 0px;
   }
   .page-f{
     padding-right: 34px;
+    grid-area:f;
   }
   .page-cu{
     padding-right: 17px;
+    grid-area:cu;
+  }
+  .page-pp{
+    grid-area:pp;
+  }
+  .page-pk{
+    grid-area:pk;
+  }
+  .page-ig{
+    grid-area:ig;
   }
 }
