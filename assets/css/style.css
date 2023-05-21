@@ -108,15 +108,14 @@ h3{
 /*----------------------------------fourth section companies-------------------------------------------*/  
 .homepage-companies-logos{
   margin-top: 150px;
+  margin-bottom: 220px;
+  margin: 150px 0px 220px 0px;
 }
 .homepage-companies-logos ul {
   display: grid;
   grid-gap: 80px;
 }
-/*-----------------------------------fifth section clipboard-bottom-------------------------------------------*/                                           */
-.homepage-clipboard-bottom-text h2{
-  margin-top: 220px;
-}
+
 /*-------------------------------------------footer-----------------------------------------------------------*/
 footer{
   background-color: hsl(0, 0%, 96%);
@@ -206,7 +205,7 @@ footer{
   }
   .homepage-snippets-img img {
     position: relative;
-    left: -120px; /* Ajusta el valor según la cantidad de desplazamiento que deseas */
+    left: -120px; 
   }
   .homepage-snippets-features{
     text-align: left;
@@ -233,14 +232,10 @@ footer{
   }
   /*---------------------------------fourth section companies-------------------------------------------*/  
   .homepage-companies-logos{
-    margin: 150px 100px 0px 130px;
+    margin: 150px 100px 160px 130px;
   }
   .homepage-companies-logos ul{
     grid-template-columns: repeat(5,1fr);
-  }
-  /*---------------------------------fifth section clipboard-bottom-------------------------------------------*/  
-  .homepage-clipboard-bottom-text h2{
-    margin-top: 160px;
   }
   /*-------------------------------------------footer-----------------------------------------------------------*/
   .page-footer {
