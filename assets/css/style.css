@@ -138,7 +138,7 @@ footer{
 }
 .page-footer-media ul{
   display: flex;
-  column-gap: 50px;
+  column-gap: 30px;
 }
 .fa-brands{
   font-size: 25px;
@@ -234,14 +234,15 @@ footer{
    /*-------------------------------------------footer-----------------------------------------------------------*/
   .page-footer {
     display: grid;
-    grid-template-columns: 0.5fr 1.7fr 0.8fr;
+    grid-template-columns: 0.6fr 1.8fr 0.6fr;
     place-items: center;
+    padding: 0px 30px ;
   }
   .page-footer-page{
     place-self: normal;
   }
   .page-footer-page ul{
-    grid-template-columns: repeat(auto-fill,270px);
+    grid-template-columns: repeat(3,1fr);
     grid-template-areas: 
     "f pp ig "
     "cu pk "" "
