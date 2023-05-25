@@ -17,11 +17,10 @@
 	margin: 0;
 	padding: 0;
 }
-body,.page-wrapper{
+body{
   display: flex;
   flex-direction: column;
-  align-items: center;
-	justify-content: center;
+  text-align: center;
 }
 body p{
   color: var(--grayish-blue);
@@ -40,17 +39,15 @@ h3{
   font-size: 24px;
   margin-bottom: 15px;
 }
+
 .padding{
-  padding: 0 31px 0 31px ;
+  margin: 0 31px 0 31px ;
 }
-.page-wrapper{
-  text-align: center;
-  min-height: 100vh;
-}
+
+/*-------------------------------------------header-------------------------------------------*/  
 .page-wrapper,.page,.btn{
   font: 400 18px var(--font-family);
 }
-/*-------------------------------------------header-------------------------------------------*/  
 .header-img{
   padding: 150px 0px 80px 0px;
   background: url('../images/bg-header-mobile.png') no-repeat top ;
@@ -58,9 +55,6 @@ h3{
 }
 .header-description-text p{
   margin-bottom: 40px;
-}
-.images, footer{
-  width: 100%;
 }
 .btn-block{
   display: inline-flex;
@@ -88,6 +82,9 @@ h3{
 .homepage-snippets-img{
   margin: 75px 0px 60px 0px;
 }
+.homepage-snippets-img img,.homepage-clipboard-img img{
+  width: 100%;
+}
 .homepage-snippets-features li,.homepage-clipboard-bottom-text p{
   margin-bottom: 60px;
 }
@@ -98,7 +95,7 @@ h3{
 .homepage-clipboard-img{
   margin-bottom: 100px;
 }
-/*----------------------------------third section clipboard-------------------------------------------*/  
+/*----------------------------------third section workflow-------------------------------------------*/  
 .homepage-workflow-features li img{
   margin: 70px 0px 45px 0px;
 }
@@ -107,26 +104,20 @@ h3{
 }
 /*----------------------------------fourth section companies-------------------------------------------*/  
 .homepage-companies-logos{
-  margin-top: 150px;
-  margin-bottom: 220px;
   margin: 150px 0px 220px 0px;
 }
 .homepage-companies-logos ul {
-  display: grid;
-  grid-gap: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
 }
-
 /*-------------------------------------------footer-----------------------------------------------------------*/
 footer{
   background-color: hsl(0, 0%, 96%);
-  margin-bottom: 280px;
 }
 .page-footer{
   padding: 55px 30px 55px 30px;
   text-align: center;
-}
-.page-footer-logo{
-  width: 50px;
 }
 .page-footer-page ul{
   margin: 50px 0px 50px 0px;
@@ -174,13 +165,13 @@ footer{
     width: 100%;
   }
   .padding{
-    padding: 0 0 0 0 ;
+    margin: 0 0px 0 0px ;
   }
-  /*-------------------------------------------header-------------------------------------------*/  
+   /*-------------------------------------------header-------------------------------------------*/  
   .header-img{
     background: none;
   }
-  .header-description,.homepage-snippets-text,.homepage-clipboard-bottom-flex,.homepage-clipboard-text{
+  .header-description,.homepage-snippets-text,.homepage-clipboard-bottom,.homepage-clipboard-text{
     width: 100%;
     max-width: 700px;
   }
@@ -193,34 +184,38 @@ footer{
   .btn{
     padding: 16px 40px 16px 40px;
   }
-  /*---------------------------------first section snippets-------------------------------------------*/  
-  .homepage-snippets,.homepage-clipboard-bottom,.homepage-clipboard{
+  .header-description-flex,.homepage-clipboard-bottom-flex,.homepage-clipboard,.homepage-snippets,.homepage-workflow-features-wrapper{
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .homepage-snippets-grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+   /*---------------------------------first section snippets-------------------------------------------*/  
+  .homepage-snippets-bootom-wrapper{
+    width: 100%;
+    display: flex;
   }
-  .homepage-snippets-img img {
-    position: relative;
-    left: -120px; 
+  .homepage-snippets-bootom{
+    display: flex;
+    margin-top: 80px;
+  }
+  .homepage-snippets-img{
+    margin: 0px 0px 0px 0px;
+    margin-left: -37px;
   }
   .homepage-snippets-features{
     text-align: left;
-    padding-top: 150px;
-    width: 400px;
+    margin: 70px 0px 0px 100px;
   }
-  /*---------------------------------second section clipboard-------------------------------------------*/  
-  .homepage-clipboard-text {
-    margin: 150px 0px 75px 0px;
+  .homepage-snippets-features ul{
+    max-width: 400px;
   }
-  /*---------------------------------third section workflow-------------------------------------------*/  
+   /*---------------------------------third section workflow-------------------------------------------*/  
+  .homepage-workflow-features{
+    max-width: 1250px;
+  }
   .homepage-workflow-features ul{
     display: grid;
-    grid-template-columns: repeat(3,390px); 
-    justify-content: center;
+    grid-template-columns: repeat(3,1fr);
     column-gap: 25px;
   }
   .homepage-workflow-features .homepage-workflow-img1 img{
@@ -230,14 +225,13 @@ footer{
   .homepage-workflow-features li p{
     line-height: 30px;
   }
-  /*---------------------------------fourth section companies-------------------------------------------*/  
-  .homepage-companies-logos{
-    margin: 150px 100px 160px 130px;
-  }
+   /*---------------------------------fourth section companies-------------------------------------------*/  
   .homepage-companies-logos ul{
-    grid-template-columns: repeat(5,1fr);
-  }
-  /*-------------------------------------------footer-----------------------------------------------------------*/
+    flex-direction: row;
+    gap: 0px;
+    justify-content: space-evenly;
+  } 
+   /*-------------------------------------------footer-----------------------------------------------------------*/
   .page-footer {
     display: grid;
     grid-template-columns: 0.5fr 1.7fr 0.8fr;
