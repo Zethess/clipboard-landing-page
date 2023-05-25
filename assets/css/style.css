@@ -49,7 +49,7 @@ h3{
   font: 400 18px var(--font-family);
 }
 .header-img{
-  padding: 150px 0px 80px 0px;
+  padding: 110px 0px 80px 0px;
   background: url('../images/bg-header-mobile.png') no-repeat top ;
   background-size: cover;
 }
@@ -90,21 +90,21 @@ h3{
 }
 /*---------------------------------second section clipboard-------------------------------------------*/  
 .homepage-clipboard-text {
-  margin: 250px 0px 75px 0px;
+  margin: 150px 0px 75px 0px;
 }
 .homepage-clipboard-img{
   margin-bottom: 100px;
 }
 /*----------------------------------third section workflow-------------------------------------------*/  
 .homepage-workflow-features li img{
-  margin: 70px 0px 45px 0px;
+  margin: 100px 0px 45px 0px;
 }
 .homepage-workflow-text p{
   margin-bottom: 30px;
 }
 /*----------------------------------fourth section companies-------------------------------------------*/  
 .homepage-companies-logos{
-  margin: 150px 0px 220px 0px;
+  margin: 150px 0px 120px 0px;
 }
 .homepage-companies-logos ul {
   display: flex;
@@ -220,7 +220,7 @@ footer{
   }
   .homepage-workflow-features .homepage-workflow-img1 img{
     margin: inherit;
-    margin: 70px 0px 37px 0px;
+    margin: 100px 0px 37px 0px;
   }
   .homepage-workflow-features li p{
     line-height: 30px;
